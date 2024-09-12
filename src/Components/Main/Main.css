@@ -1,0 +1,204 @@
+
+.main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fbfbfb;
+}
+.main > * {
+  position: relative;
+}
+.main section.left,
+.main section.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  gap: 2rem;
+  word-spacing: normal;
+  text-align: center;
+  /* border: solid 1px #39db4a; */
+}
+.main h1 {
+  font-size: 42px;
+  margin: auto;
+  color: black;
+}
+.main h1 span {
+  color: #39db4a;
+}
+.main .left {
+  padding: 2rem 5rem;
+}
+.main .left p {
+  padding: 0 2rem;
+  margin: auto;
+  font-size: 20px;
+}
+
+.main .left .buttons {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+.main .left .buttons span:first-child {
+  color: white;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  transition: all 0.2s ease-in-out;
+  background-color: #39db4a;
+}
+.main .left .buttons span:first-child:hover {
+  cursor: pointer;
+  padding: 1rem 3rem;
+  outline-offset: 2px;
+  outline: solid 2px #39db4a;
+}
+.main .left .buttons span:last-child {
+  display: flex;
+  font-weight: 600;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.main .left .buttons .play-btn {
+  display: grid;
+  cursor: pointer;
+  place-content: center;
+  padding: 0.8rem;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px lightgrey, inset 3px 3px 6px whitesmoke;
+}
+
+.main .right {
+  position: relative;
+  min-width: 280px;
+  /* border: solid 2px rebeccapurple !important; */
+  /* overflow: hidden; */
+  display: flex;
+  padding: 0% !important;
+  justify-content: center;
+  /* align-items: end !important; */
+}
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  border-radius: 50%;
+  height: max-content;
+  background-color: #39db4a;
+  object-fit: cover;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .right .tags {
+  position: absolute !important;
+  top: 18%;
+  left: 2%;
+  z-index: 2;
+  flex: 1;
+  font-weight: bold;
+  /* font-size: 12px; */
+  color: red;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem 5rem 0rem 5rem;
+  box-shadow: 2px 2px 4px lightgrey;
+  background-color: whitesmoke;
+}
+
+.main .right .tag-2 {
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+  z-index: 2;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: white;
+}
+.main .right .tag-2 .dish-1 {
+  position: absolute;
+  box-shadow: 2px 2px 6px gray;
+  left: 50px;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex: 1;
+  width: max-content;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  border-radius: 1rem 0 1rem 1rem;
+  background-color: whitesmoke;
+}
+.main .right .tag-2 .dish-1 .dish-img,
+.main .right .tag-2 .dish-2 .dish-img {
+  display: grid;
+  place-content: center;
+  width: 60px;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 60px;
+  background-color: gray;
+}
+.main .right .tag-2 .dish-1 .dish-img img,
+.main .right .tag-2 .dish-2 .dish-img img {
+  width: 100%;
+  flex: 1;
+  border-radius: 1rem;
+  height: 100%;
+}
+.main .right .tag-2 .dish-2 {
+  position: absolute;
+  right: 50px;
+  flex: 1;
+  bottom: 0;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  display: flex;
+  width: max-content;
+  height: max-content;
+  justify-content: start;
+  align-items: start;
+  box-shadow: 2px 2px 6px gray;
+  bottom: 0%;
+  border-radius: 0 1rem 1rem 1rem;
+  background-color: whitesmoke;
+}
+
+.ratings {
+  display: flex;
+  height: 10px;
+}
+.ratings img {
+  height: 100%;
+}
+
+.dish-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.35rem;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0.2rem 0.5rem;
+}
+.dish-price span {
+  color: red;
+  font-size: 10px;
+}
