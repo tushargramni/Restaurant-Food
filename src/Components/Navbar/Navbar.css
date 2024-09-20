@@ -1,183 +1,4 @@
-/* Global Reset */
-* {
-  margin: 0%;
-  padding: 0%;
-  transition: all 0.2s linear;
-  box-sizing: border-box;
-}
-
-/* Main Navbar Styles */
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1;
-  padding: 0.5rem 1rem;
-  background-color: #fbfbfb;
-  align-items: center;
-  justify-content: space-around;
-}
-
-nav > * {
-  cursor: pointer;
-}
-
-/* Logo */
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  margin: 1rem auto;
-  font-size: 20px;
-  padding: 0 0.5rem;
-}
-
-.logo .logo-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo .logo-name img {
-  padding: 0.5rem 0.4rem;
-  border-radius: 5pt;
-  background-color: #39db4a;
-}
-
-/* Navigation Items */
-.nav-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  font-size: 18px;
-}
-
-.nav-items a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.nav-items span {
-  padding: 0.25rem 1rem;
-  border-radius: 5rem;
-}
-
-.nav-items a:hover span {
-  background-color: #39db4a;
-  color: white;
-  font-weight: 600;
-}
-
-.nav-items a:first-child {
-  font-weight: 500;
-  color: #39db4a;
-}
-
-/* Buttons */
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: auto;
-  padding: 0.5rem;
-  text-transform: capitalize;
-}
-
-.buttons span img {
-  position: relative;
-  height: 1rem;
-  width: 1rem;
-}
-
-.buttons span {
-  position: relative;
-}
-
-.buttons span.cart-icon .badge {
-  position: absolute;
-  background-color: #39db4a;
-  color: white;
-  top: -8px;
-  right: -8px;
-  width: 16px;
-  padding: 0.1rem;
-  height: 16px;
-  display: grid;
-  place-content: center;
-  border-radius: 50%;
-}
-
-.buttons a {
-  display: flex;
-  gap: 0.5rem;
-  text-decoration: none;
-}
-
-.buttons a:last-child {
-  padding: 0.5rem 1rem;
-  border-radius: 5rem;
-  background-color: #39db4a;
-  color: white;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  /* Stack nav items vertically */
-  .nav-items {
-    flex-direction: column;
-    gap: 1rem;
-    font-size: 16px;
-  }
-
-  /* Stack buttons vertically */
-  .buttons {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  /* Adjust logo size */
-  .logo img {
-    height: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Collapse nav items into a hamburger menu */
-  .nav-items {
-    display: none;
-  }
-
-  /* Add a hamburger menu */
-  .navbar-toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #39db4a;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-  }
-
-  /* Show menu when clicked (can be toggled with JavaScript) */
-  .navbar-toggle.active + .nav-items {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/* *{
+*{
   margin: 0%;
   padding: 0%;
   transition: all 0.2s linear;
@@ -274,9 +95,10 @@ nav > *{
   position: absolute;
   background-color: #39db4a;
   color: white;
-  top: -8px;
-  right: -8px;
+  top: -6px;
+  right: -6px;
   width: 16px;
+  font-size: 10px;
   padding: 0.1rem;
   height: 16px;
   display: grid;
@@ -294,4 +116,7 @@ nav > *{
   border-radius: 5rem;
   background-color: #39db4a;
   color: white;
-} */
+}
+.hamburger{
+  display: none;
+}

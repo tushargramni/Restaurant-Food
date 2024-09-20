@@ -118,30 +118,31 @@
 
 .main .right .tag-2 {
   position: absolute;
-  bottom: -60px;
-  width: 100%;
-  z-index: 2;
+  bottom: 0;
+  width: max-content;
+  height: max-content;
   gap: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: safe;
   padding: 0.5rem;
   background-color: white;
 }
 .main .right .tag-2 .dish-1 {
   position: absolute;
-  box-shadow: 2px 2px 6px gray;
-  left: 50px;
+  left: 0%;
+  bottom: 0%;
   margin: 0 1rem;
   padding: 0.5rem;
   display: flex;
-  flex: 1;
   width: max-content;
   height: max-content;
   justify-content: center;
   align-items: center;
-  bottom: 0%;
   border-radius: 1rem 0 1rem 1rem;
+  box-shadow: 2px 2px 6px lightgray;
   background-color: whitesmoke;
 }
 .main .right .tag-2 .dish-1 .dish-img,
@@ -149,39 +150,36 @@
   display: grid;
   place-content: center;
   width: 60px;
-  flex: 1;
   border-radius: 1rem;
   overflow: hidden;
-  height: 60px;
+  height: max-content;
   background-color: gray;
 }
 .main .right .tag-2 .dish-1 .dish-img img,
 .main .right .tag-2 .dish-2 .dish-img img {
   width: 100%;
-  flex: 1;
-  border-radius: 1rem;
   height: 100%;
 }
 .main .right .tag-2 .dish-2 {
-  position: absolute;
-  right: 50px;
-  flex: 1;
+    position: absolute;
+  right: 0;
   bottom: 0;
   margin: 0 1rem;
   padding: 0.5rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: max-content;
   height: max-content;
-  justify-content: start;
-  align-items: start;
-  box-shadow: 2px 2px 6px gray;
-  bottom: 0%;
+  box-shadow: 2px 2px 6px lightgray;
   border-radius: 0 1rem 1rem 1rem;
   background-color: whitesmoke;
 }
 
 .ratings {
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
   height: 10px;
 }
 .ratings img {
@@ -199,6 +197,6 @@
   margin: 0.2rem 0.5rem;
 }
 .dish-price span {
-  color: red;
+  color: black;
   font-size: 10px;
 }

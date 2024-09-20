@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import arrowDown from "./nav-icons/down-arrow.png";
 import cart from "./nav-icons/shopping-bag.png";
-import search from "./nav-icons/icon_search.png";
+import search from "./nav-icons/icon _search.png";
 import oodi from "./nav-icons/oodi.png";
 import phone from "./nav-icons/phone_in_talk.svg";
 import ficon from "./nav-icons/F.png";
