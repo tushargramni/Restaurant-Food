@@ -4,18 +4,19 @@
     align-items: center;
     gap: 1rem;
     flex-direction: column;
-    padding: 2rem 2rem;
-    /* border: solid 2px forestgreen; */
+    padding: 2.5rem 1rem;
     margin-top: 3rem;
     background-color: #fcfcfc;
-    /* background-color: #fbfbfb; */
 }
 .fav-container p:first-child{
     width: 100%;
-    font-size: smaller;
+    text-align: center;
+    /* font-size: smaller; */
     color: red;
 }
 .fav-container h1{
+    width: 100%;
+    text-align: center;
     font-size: 48px;
     margin-bottom: 1rem;
 }
@@ -38,7 +39,7 @@
     padding: 1rem;
     width: 180px;
     height: 180px;
-    box-shadow: -1px -1px 0px lightgray, 2px 2px 10px gray;
+    box-shadow: -1px -1px 0px lightgray, 2px 2px 12px lightgray;
     margin: 0.5rem auto;
     min-height: max-content;
     min-width: max-content;
@@ -50,7 +51,7 @@
     box-shadow: inset -1px -1px 4px lightgray,inset 1px 1px 4px gray;
 }
 .category .cate-img{
-    padding: 0.5rem ;
+    padding: 0.5rem  ;
     width: 50%;
     display: grid;
     margin: 0.5rem auto;

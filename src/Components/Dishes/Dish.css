@@ -1,0 +1,26 @@
+.dishCon{
+    padding: 1rem 2rem;
+}
+p{
+    color: red;
+}
+nav{
+    padding: 1rem ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;    
+    border-radius: 50%;
+    background-color: #39db4a;
+}
+picture img{
+    
+}
