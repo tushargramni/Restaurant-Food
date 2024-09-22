@@ -21,7 +21,9 @@ const Main = () => {
           <span>Order Now </span>
           <span>
             Watch Video
+            {/* <audio src="" controls></audio> */}
             <div className="play-btn">
+              {/* <video src="" controls></video> */}
               <img src={play} alt="" />
             </div>
           </span>

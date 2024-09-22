@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Main from "./Components/Main/Main";
-import Favourites from "./Components/Favourites/Favourites";
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import Main from "./Components/Main/Main.jsx";
 import "./App.css";
-import Dishes from "./Components/Dishes/Dishes";
+import Dishes from "./Components/Dishes/Dishes.jsx";
+import Favourites from "./Components/Favourites/Favourites.jsx";
 const App = () => {
   return (
     <>

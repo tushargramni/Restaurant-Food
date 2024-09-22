@@ -4,19 +4,23 @@
   transition: all 0.2s linear;
   box-sizing: border-box;
 }
-nav {
+@media screen and (min-width: 993px) {
+nav.navbar {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-  flex: 1;
+  width: 100%;
+  /* flex: 1; */
   padding: 0.5rem 1rem;
   background-color: #fbfbfb;
-  align-items: center;
-  justify-content: space-around;
+  /* border: solid 2px #39db4a; */
 }
-nav > *{
-  cursor: pointer;
+
 }
+
+
 .logo {
   display: flex;
   justify-content: center;
@@ -42,12 +46,17 @@ nav > *{
 .nav-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction:row;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 1rem auto;
+  width: max-content;
   font-size: 18px;
-}
+  padding: 0.5rem 1rem;
+  border-radius: 20rem;
+  /* border: solid 2px green; */
+} 
 
 
 .nav-items a{
@@ -57,6 +66,9 @@ nav > *{
     gap: 10px;
     text-decoration: none;
     color: black;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    /* border: solid 2px #39db4a; */
 }
 .nav-items span{
   padding: 0.25rem 1rem ;
@@ -95,8 +107,8 @@ nav > *{
   position: absolute;
   background-color: #39db4a;
   color: white;
-  top: -6px;
-  right: -6px;
+  top: 0;
+  right: 10px;  
   width: 16px;
   font-size: 10px;
   padding: 0.1rem;
@@ -119,4 +131,34 @@ nav > *{
 }
 .hamburger{
   display: none;
+}
+/* } */
+
+@media screen and (max-width: 992px) {
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid 2px #39db4a; */
+  }
+  .nav-items{
+    display: flex;
+    width: max-content;
+    margin: auto;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    /* border: solid 2px #39db; */
+  }
+ .nav-items .buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: solid 2px #39db; */
+ }
 }
