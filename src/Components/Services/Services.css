@@ -1,0 +1,72 @@
+.servCon{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.servCon .left{
+    width: 50%;
+    max-width: 700px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem;
+}
+.servCon .left p:first-child{
+    color: red;
+    padding: 0 2rem;
+    font-weight: 500;
+}
+.servCon .left p:nth-last-child(2){
+    font-size: 1.25rem;
+    padding: 2rem 2rem;
+}
+.servCon .left h1{
+    font-size: 3rem;
+    padding: 0rem 2rem;
+}
+.servCon .right{
+    display: flex;
+    width: 50%;
+    max-width: 700px;
+    height: max-content;
+    flex: 1;
+    padding: 2rem;
+}
+.servCon .btn{
+    color: white;
+    padding: 1rem 3.2rem;
+    margin: 0 1.2rem;
+    border-radius: 5rem;
+    background-color: #39db4a;
+}
+.servCon .right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.25rem;
+    width: 50%;
+    /* border: solid 2px #39db4a; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.servCon .right .serv-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 220px;
+    padding: 2rem 1rem;
+    color: #39db4a;
+    border-radius: 2rem;
+ background-color: #ededed;     
+}

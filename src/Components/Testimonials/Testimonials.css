@@ -1,0 +1,119 @@
+.testCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  /* border: solid 2px #39d4ba; */
+}
+.testCon .left {
+  display: flex;
+    width: 50%;
+    flex: 1;
+    min-width: 500px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  flex-direction: column;
+  /* border: solid 2px #39d4ba; */
+}
+.testCon .left p:first-child {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: start;
+  color: red;
+}
+.testCon .left h1{
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    /* border: solid 2px #39d4ba; */
+}
+.testCon .left p.test-desc{
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    margin: auto;
+    /* border: solid 2px #39d4ba;; */
+}
+.testCon .right {
+  display: flex;
+  width: 50%;
+  flex: 1;
+  min-width: 500px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 2rem 2rem ;
+  background-color: transparent;
+  flex-direction: column;
+  /* border: solid 2px  #39db4a; */
+}
+.testCon .right .bg-green {
+  position: absolute;
+  background-color: #39db4a;
+  bottom: 30px;
+  margin: auto;
+  width: 330px;
+  height: 230px;
+  border-radius: 50% 50% 2rem 2rem;
+}
+.testCon .right .comment{
+    position: absolute;
+    z-index: 2;
+    max-width: max-content;
+    padding: 0.5rem 1rem;
+    bottom: 2%;
+    right: 200px;
+    font-size: smaller;
+    border-radius: 0 5rem 5rem 5rem;
+    background-color: #efefef;
+}
+.testCon .right img {
+  width: 280px;
+  height: 100%;
+  filter: drop-shadow(2px 2px 4px black);
+}
+.people {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.people .user {
+  border-radius: 50%;
+  overflow: hidden;
+  /* border: solid 3px white; */
+  background-color: white;
+}
+.people .user:nth-child(1) {
+  margin-right: -10px;
+}
+.people .user:nth-child(1) {
+    margin-right: -12px;
+  }
+.people .user:nth-child(3){
+  margin-left: -12px;
+  border: solid 3px white;;
+}
+
+.people .user img {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+.user-feed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+.user-rating{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.user-rating img{
+    height: 12px;
+}

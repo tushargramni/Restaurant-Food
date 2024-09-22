@@ -4,6 +4,9 @@ import Main from "./Components/Main/Main.jsx";
 import "./App.css";
 import Dishes from "./Components/Dishes/Dishes.jsx";
 import Favourites from "./Components/Favourites/Favourites.jsx";
+import Testimonials from "./Components/Testimonials/Testimonials.jsx";
+import Services from "./Components/Services/Services.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 const App = () => {
   return (
     <>
@@ -11,6 +14,9 @@ const App = () => {
       <Main />
       <Favourites />
       <Dishes />
+      <Testimonials />
+      <Services />
+      <Footer />
     </>
   );
 };
